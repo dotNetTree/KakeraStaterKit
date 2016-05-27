@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
+/* reset */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+*,
+:after,
+:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+button:focus,
+button:hover,
+a:focus,
+a:hover {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a,
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+input,
+textarea,
+keygen,
+select,
+button {
+  font-family: 'Noto Sans';
+}
+
+/* Remove inner shadow from inputs on mobile iOS */
+input[type='text'],
+input[type='radio'],
+input[type='checkbox'],
+select,
+button,
+textarea {
+  -webkit-appearance: none;
+}
+
+
+.clock-wrap {
+  position: relative;
+  background: url('../images/bg_clock.png') no-repeat;
+  width: 300px;
+  height: 155px;
+}
+.clock-wrap h1 {
+  position: absolute;
+  top: 102px;
+  left: 30px;
+  width: 66px;
+  height: 26px;
+}
+.clock-wrap .display {
+  position: absolute;
+  background: url('../images/bg_display.png') no-repeat;
+  top: 32px;
+  left: 28px;
+  width: 243px;
+  height: 40px;
+  line-height: 38px;
+  text-align: center;
+  color: #746c58;
+  font-size: 24px;
+}
+.clock-wrap .bottom-pannel {
+  position: absolute;
+  top: 94px;
+  left: 175px;
+  width: 96px;
+  height: 32px;
+  background: #eee4d5;
+  border: #bab6ad 1px solid;
+  border-radius: 5px;
+  -ms-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.clock-wrap .bottom-pannel ul:after {
+  content: ' ';
+  clear:both;
+  display:block;
+}
+.clock-wrap .bottom-pannel {
+  position: relative;
+}
+.clock-wrap .bottom-pannel span {
+  position: absolute;
+  top: 0;
+  left: 48px;
+  width: 47px;
+  height: 32px;
+  background: #dc5020;
+  -ms-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+.clock-wrap .bottom-pannel li a{
+  float: left;
+  width: 47px;
+  font-size: 12px;
+  color: #746c58;
+  font-family: Tahoma;
+  text-align: center;
+  line-height: 30px;
+}

@@ -1,0 +1,9 @@
+{
+  "name": "kakera-starter-kit-gulp",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-webserver": "^0.9.1"
+  },
+  "license": ""
+}
